@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "assets": [
+      "config/env/*",
+      "**/*.html",
+      "common/jsons",
+      "migrations/**",
+      ".sequelizerc",
+      "public"
+    ],
+    "watchAssets": true
+  }
+}
