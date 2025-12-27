@@ -44,7 +44,7 @@ Create environment files in `src/config/env/` directory:
 **Important**: Environment files are encrypted using `secure-env`. Use the following command to encrypt your environment files:
 
 ```bash
-npx secure-env src/config/env/development.env -s ECfgfdh9l36m67lf50HFGT2fy8b6a44
+npx secure-env src/config/env/development.env -s <Key> 
 ```
 
 
