@@ -4,9 +4,9 @@ services:
   ecom_postgres:
     image: postgres:16
     environment:
-      POSTGRES_USER: ecom
-      POSTGRES_PASSWORD: ecom@2025
-      POSTGRES_DB: e-commerce
+      POSTGRES_USER: 
+      POSTGRES_PASSWORD: 
+      POSTGRES_DB:
     ports:
       - "5433:5432"
     restart: always
