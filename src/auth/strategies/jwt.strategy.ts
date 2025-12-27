@@ -21,8 +21,6 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
       ignoreExpiration: false,
       secretOrKey: configService.get('JWT.KEY'),
       algorithms:  configService.get('ALGORITHM'), 
-      issuer: configService.get('JWT.ISSUER'),
-      audience: configService.get('JWT.AUDIENCE'),
     });
   }
 

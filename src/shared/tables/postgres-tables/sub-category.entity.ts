@@ -23,7 +23,7 @@ export class SubCategory extends Model {
 
     @Column({
         type: DataType.TEXT,
-        allowNull: false,
+        allowNull: true,
     })
     declare desc: string;
 

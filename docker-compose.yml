@@ -1,0 +1,39 @@
+version: '3.9'
+
+services:
+  ecom_postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: 
+      POSTGRES_PASSWORD: 
+      POSTGRES_DB:
+    ports:
+      - "5433:5432"
+    restart: always
+    volumes:
+      - postgres_db:/var/lib/postgresql/data
+    command: postgres -c max_locks_per_transaction=2000
+    networks:
+      - ecom_network
+  server:
+    build: .
+    ports:
+      - "3000:3000"
+    restart: always
+    depends_on:
+      - ecom_postgres
+    volumes:
+      - ecom_storage:/app/uploads
+      - ecom_logs:/app/logs
+    networks:
+      - ecom_network
+
+volumes:
+  postgres_db:
+  ecom_storage:
+  ecom_logs:
+
+networks:
+  ecom_network:
+    driver: bridge
+

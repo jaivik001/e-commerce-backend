@@ -113,3 +113,23 @@ export const SkippingDecryptionLog = "| Skipping decryption for multipart/form-d
 
 // API messages
 export const InvalidApiKey = "Invalid API Key";
+
+//Category
+export const CategoryAlreadyExist = 'Category with this name already exists'
+export const CategoryCreatedSuccessfully = "Category has been created successfully";
+export const CategoryUpdatedSuccessfully = "Category has been updated successfully";
+export const CategoryDeletedSuccessfully = "Category has been deleted successfully";
+export const CategoryDoesNotExist = "Category does not exist";
+export const CategoryInfo = "Category info";
+export const CategoryInfos = "Category infos";
+export const RequireCategoryId = "Category id is required";
+
+//Sub-Category
+export const SubCategoryAlreadyExist = 'Sub category with this name already exists'
+export const SubCategoryCreatedSuccessfully = "Sub category has been created successfully";
+export const SubCategoryUpdatedSuccessfully = "Sub category has been updated successfully";
+export const SubCategoryDeletedSuccessfully = "Sub category has been deleted successfully";
+export const SubCategoryDoesNotExist = "Sub category does not exist";
+export const SubCategoryInfo = "Sub category info";
+export const SubCategoryInfos = "Sub category infos";
+export const RequireSubCategoryId = "Sub category id is required";

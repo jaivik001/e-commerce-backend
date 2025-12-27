@@ -82,7 +82,7 @@ export class AuthService {
         sub: user.id,
         email: user.email,
       };
-      const accessToken = this.jwtService.sign(payload, { secret: this.configService.get('JWT.KEY'), expiresIn: this.configService.get('JWT.EXPIRES_IN'), issuer: this.configService.get('JWT.ISSUER'), audience: this.configService.get('JWT.AUDIENCE') });
+      const accessToken = this.jwtService.sign(payload, { secret: this.configService.get('JWT.KEY'), expiresIn: this.configService.get('JWT.EXPIRES_IN')});
       await this.userService.addOrUpdateDevice({ ...input, userId: user.id, accessToken: accessToken });
 
       // if(user.isEmailVerified === Status.NO){
