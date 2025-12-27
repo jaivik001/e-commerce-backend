@@ -1,0 +1,27 @@
+<html>
+
+<body style="background-color:#eceff1; font-family: PT Sans,Trebuchet MS,sans-serif;">
+    <div
+        style="margin: 0 auto; width: 600px; background-color: #fff; font-size: 1.2rem; font-style: normal;font-weight: normal;line-height: 19px;">
+        <div style="padding: 50px;">
+            <p style="Margin-top: 20px;Margin-bottom: 0;">&nbsp;</p>
+            <p style="font-weight: 600; font-size: 18px; margin-block: 0;">Dear {{name}},</p>
+            <p style="font-size: 16px;line-height: 24px; color: #000">We received a request to verify your account.
+                Use the One Time Password (OTP) below to proceed:
+            </p>
+            <div style="font-size: 24px; font-weight: bold; color: #000; text-align: center; margin: 30px 0;">
+                {{otp}}
+            </div>
+            <p style="font-size: 16px;line-height: 24px; color: #000">This OTP is valid for the next {{expiry_minutes}} minutes.</p>
+            <p style="font-size: 16px;line-height: 24px; color: #000">If you did not initiate this request, you can safely ignore this email.</p>
+            <p style="font-size: 16px;line-height: 24px; color: #000">If you need any assistance, feel free to contact our support team.</p>
+            <p style="font-size: 16px;line-height: 24px; color: #000; margin-bottom: 0">Best regards,</p>
+            {{!-- <div style="width:100px; height: 18px;">
+                <img src="cid:logo" alt="Company Logo" style="width: 100%;" />
+            </div> --}}
+
+        </div>
+    </div>
+</body>
+
+</html>

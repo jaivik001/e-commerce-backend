@@ -1,0 +1,105 @@
+[1mdiff --git a/README.md b/README.md[m
+[1mindex c52a641..8f0f65f 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -1,2 +1,98 @@[m
+[31m-# e-commerce-backend[m
+[31m-E-commerce backend built with NestJS, featuring JWT authentication, product management.[m
+[32m+[m[32m<p align="center">[m
+[32m+[m[32m  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>[m
+[32m+[m[32m</p>[m
+[32m+[m
+[32m+[m[32m[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456[m
+[32m+[m[32m[circleci-url]: https://circleci.com/gh/nestjs/nest[m
+[32m+[m
+[32m+[m[32m  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>[m
+[32m+[m[32m    <p align="center">[m
+[32m+[m[32m<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>[m
+[32m+[m[32m<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>[m
+[32m+[m[32m<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>[m
+[32m+[m[32m<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>[m
+[32m+[m[32m<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>[m
+[32m+[m[32m<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>[m
+[32m+[m[32m<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>[m
+[32m+[m[32m  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>[m
+[32m+[m[32m    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>[m
+[32m+[m[32m  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>[m
+[32m+[m[32m</p>[m
+[32m+[m[32m  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)[m
+[32m+[m[32m  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->[m
+[32m+[m
+[32m+[m[32m## Description[m
+[32m+[m
+[32m+[m[32m[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.[m
+[32m+[m
+[32m+[m[32m## Project setup[m
+[32m+[m
+[32m+[m[32m```bash[m
+[32m+[m[32m$ npm install[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32m## Compile and run the project[m
+[32m+[m
+[32m+[m[32m```bash[m
+[32m+[m[32m# development[m
+[32m+[m[32m$ npm run start[m
+[32m+[m
+[32m+[m[32m# watch mode[m
+[32m+[m[32m$ npm run start:dev[m
+[32m+[m
+[32m+[m[32m# production mode[m
+[32m+[m[32m$ npm run start:prod[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32m## Run tests[m
+[32m+[m
+[32m+[m[32m```bash[m
+[32m+[m[32m# unit tests[m
+[32m+[m[32m$ npm run test[m
+[32m+[m
+[32m+[m[32m# e2e tests[m
+[32m+[m[32m$ npm run test:e2e[m
+[32m+[m
+[32m+[m[32m# test coverage[m
+[32m+[m[32m$ npm run test:cov[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32m## Deployment[m
+[32m+[m
+[32m+[m[32mWhen you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.[m
+[32m+[m
+[32m+[m[32mIf you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:[m
+[32m+[m
+[32m+[m[32m```bash[m
+[32m+[m[32m$ npm install -g @nestjs/mau[m
+[32m+[m[32m$ mau deploy[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32mWith Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.[m
+[32m+[m
+[32m+[m[32m## Resources[m
+[32m+[m
+[32m+[m[32mCheck out a few resources that may come in handy when working with NestJS:[m
+[32m+[m
+[32m+[m[32m- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.[m
+[32m+[m[32m- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).[m
+[32m+[m[32m- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).[m
+[32m+[m[32m- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.[m
+[32m+[m[32m- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).[m
+[32m+[m[32m- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).[m
+[32m+[m[32m- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).[m
+[32m+[m[32m- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).[m
+[32m+[m
+[32m+[m[32m## Support[m
+[32m+[m
+[32m+[m[32mNest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).[m
+[32m+[m
+[32m+[m[32m## Stay in touch[m
+[32m+[m
+[32m+[m[32m- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)[m
+[32m+[m[32m- Website - [https://nestjs.com](https://nestjs.com/)[m
+[32m+[m[32m- Twitter - [@nestframework](https://twitter.com/nestframework)[m
+[32m+[m
+[32m+[m[32m## License[m
+[32m+[m
+[32m+[m[32mNest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).[m
