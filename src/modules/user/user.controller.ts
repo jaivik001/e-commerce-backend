@@ -67,7 +67,7 @@ export class UserController {
 
   @UseGuards(JwtAuthGuard, RolesGuard)
   @Roles(DefaultRole.USER, DefaultRole.SUPER_ADMIN)
-  @Post('user/logout')
+  @Post('users/logout')
   async logout(@Req() req: any) {
     try {
       let result = await this.userService.logout(+req.user.id);
@@ -105,7 +105,7 @@ export class UserController {
     }
   }
 
-  @Post('users/verify-otps')
+  @Post('users/verify-otp')
   @UseGuards(JwtAuthGuard, RolesGuard)
   @Roles(DefaultRole.USER)
   async verifyOTPs(@Req() req: any, @Body() body: any) {

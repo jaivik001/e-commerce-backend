@@ -6,7 +6,8 @@ import { DefaultAppVersion } from 'src/common/utils/constants';
 
 
 @Table({
-    tableName: DeviceInfoModel
+    tableName: DeviceInfoModel,
+    paranoid: true
 })
 export class DeviceInfo extends Model {
 

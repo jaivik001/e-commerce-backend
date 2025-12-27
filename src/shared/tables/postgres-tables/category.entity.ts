@@ -2,7 +2,6 @@ import { AutoIncrement, BelongsTo, Column, CreatedAt, DataType, DeletedAt, Forei
 import { User } from './user.entity';
 import { CategoryModel } from 'src/common/utils/model.constants';
 import { Status } from 'src/common/utils/enums/status.enum';
-import { SubCategory } from './sub-category.entity';
 
 @Table({
     tableName: CategoryModel,
@@ -23,7 +22,7 @@ export class Category extends Model {
 
     @Column({
         type: DataType.TEXT,
-        allowNull: false,
+        allowNull: true,
     })
     declare desc: string;
 
@@ -55,9 +54,6 @@ export class Category extends Model {
 
     @BelongsTo(() => User, { onDelete: 'SET NULL', hooks: true, foreignKey: 'updatedByUserId' })
     declare updatedBy: User;
-
-    @HasMany(() => SubCategory)
-    declare subCategories: SubCategory[]
 
     @CreatedAt
     @Column({

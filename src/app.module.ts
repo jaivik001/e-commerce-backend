@@ -5,6 +5,9 @@ import { join } from 'path';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { UserModule } from './modules/user/user.module';
 import { AuthModule } from './auth/auth.module';
+import { CategoryModule } from './modules/category/category.module';
+import { SubCategoryModule } from './modules/sub-category/sub-category.module';
+
 
 @Module({
   imports: [
@@ -17,7 +20,9 @@ import { AuthModule } from './auth/auth.module';
       load: [configuration]
     }),
     UserModule,
-    AuthModule
+    AuthModule,
+    CategoryModule,
+    SubCategoryModule
   ],
   controllers: [],
   providers: [],
