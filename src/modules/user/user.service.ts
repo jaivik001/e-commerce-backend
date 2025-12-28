@@ -318,7 +318,7 @@ export class UserService {
         sub: userResult.id,
         email: userResult.dataValues.email,
       };
-      const accessToken: string = this.jwtService.sign(payload, { secret: this.configService.get('JWT.KEY'), expiresIn: this.configService.get('JWT.EXPIRES_IN'), issuer: this.configService.get('JWT.ISSUER'), audience: this.configService.get('JWT.AUDIENCE') });
+      const accessToken: string = this.jwtService.sign(payload, { secret: this.configService.get('JWT.KEY'), expiresIn: this.configService.get('JWT.EXPIRES_IN') });
       await this.addOrUpdateDevice({ ...createUserDto, userId: userResult.id, accessToken: accessToken }, transaction);
 
       await transaction.commit();
